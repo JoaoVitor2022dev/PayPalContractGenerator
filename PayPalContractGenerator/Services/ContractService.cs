@@ -27,7 +27,7 @@ namespace PayPalContractGenerator.Services
 
                 double fullQuota = updateQuota + _onlinePaymentService.PaymentFee(updateQuota);
 
-                contract.AddInstallment(new Installment(date, fullQuota)); 
+                contract.AddInstallment(new Installment(date, fullQuota));
             }
         }
     }
